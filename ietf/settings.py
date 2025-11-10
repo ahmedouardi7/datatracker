@@ -508,6 +508,8 @@ INSTALLED_APPS = [
     'simple_history',
     'tastypie',
     'widget_tweaks',
+    # GraphQL support - Copyright Amazon Q & AHMED OUARDI 2024
+    'graphene_django',
     # IETF apps
     'ietf.api',
     'ietf.blobdb',
@@ -667,6 +669,11 @@ DRF_STANDARDIZED_ERRORS = {
         # "500",
     ],
 
+}
+
+# GraphQL Configuration - Copyright Amazon Q & AHMED OUARDI 2024
+GRAPHENE = {
+    'SCHEMA': 'ietf.resolver.schema'
 }
 
 # no slash at end

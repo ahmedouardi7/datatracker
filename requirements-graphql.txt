@@ -1,0 +1,7 @@
+# GraphQL Dependencies - Copyright Amazon Q & AHMED OUARDI 2024
+# Additional requirements for GraphQL resolver functionality
+
+graphene-django>=3.0.0
+graphene>=3.0.0
+graphql-core>=3.2.0
+graphql-relay>=3.2.0

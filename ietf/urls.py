@@ -68,6 +68,9 @@ urlpatterns = [
     url(r'^templates/', include('ietf.dbtemplate.urls')),
     url(r'^(?P<group_type>(wg|rg|ag|rag|team|dir|review|area|program|iabasg|iabworkshop|adhoc|ise|adm|rfcedtyp|edwg|edappr))/', include(grouptype_urls)),
 
+    # GraphQL API - Copyright Amazon Q & AHMED OUARDI 2024
+    url(r'^graphql/', include('ietf.graphql_urls')),
+
     # Redirects
     url(r'^(?P<path>public)/', include('ietf.redirects.urls')),
 
